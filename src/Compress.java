@@ -37,7 +37,7 @@ public class Compress {
         String s = "";
 
         try {
-            File myObj = new File("D:\\DebugXXCODERProjects\\Standard Huffman\\Original File.txt");
+            File myObj = new File("Original File.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 s = myReader.nextLine();
@@ -116,7 +116,7 @@ public class Compress {
         }
 
         try {
-            File myObj = new File("D:\\DebugXXCODERProjects\\Standard Huffman\\Compressed.txt");
+            File myObj = new File("Compressed.txt");
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
             } else {
@@ -136,7 +136,7 @@ public class Compress {
         }
 
         try {
-            FileWriter myWriter = new FileWriter("D:\\DebugXXCODERProjects\\Standard Huffman\\Compressed.txt");
+            FileWriter myWriter = new FileWriter("Compressed.txt");
 
             myWriter.write(outputTable+' ');
 
